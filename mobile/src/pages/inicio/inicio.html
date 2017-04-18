@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar  color="zeus"> 
+    <ion-title  >
+        <img src="assets/zeus.png"  style="width: 40px;padding-right:2px " >Zeus Gps
+    </ion-title>
+  </ion-navbar>
+
+  
+</ion-header>
+
+<ion-content padding>
+ <ion-list>
+
+  <ion-item>
+    <ion-input type="text" [(ngModel)]="registerCredentials.usuario" placeholder="Username"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input type="password" [(ngModel)]="registerCredentials.password" placeholder="Password"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <button ion-button full padding  (click)="login()">iniciar</button>
+  </ion-item>
+
+</ion-list>
+
+ 
+<ion-fab bottom right (click)="openmodalconfig()">
+   <button ion-fab  > <ion-icon name="construct"></ion-icon></button>
+ </ion-fab>
+ 
+ 
+</ion-content>
+ 

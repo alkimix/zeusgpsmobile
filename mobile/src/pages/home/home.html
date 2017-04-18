@@ -1,0 +1,113 @@
+<!--
+  Generated template for the Home page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header >
+  
+  <ion-navbar  color="zeus" >
+   
+    <ion-title>
+      <img src="assets/zeus.png"  style="width: 40px;padding-right:2px " >Zeus Gps
+     </ion-title  >
+     
+  </ion-navbar>
+    <ion-toolbar class="buscar"  >
+      <ion-title><p>Buscando Conductor..</p></ion-title>
+  </ion-toolbar>
+
+  <ion-toolbar class="conductor"  >
+    
+     <ion-item>
+    <ion-avatar item-left>
+      <img id="imgconductor" >
+    </ion-avatar>
+    <h2><div  id="nomconductor"></div></h2>
+    <p id="placa">placa A-555</p>
+
+  </ion-item>
+ <ion-fab bottom right  id="locationconductor"  >
+   <button ion-fab mini> <ion-icon name="locate"></ion-icon></button>
+ </ion-fab>
+
+
+  </ion-toolbar>
+
+ 
+</ion-header>
+
+
+<ion-content>
+
+
+
+  
+ <div id="map">  </div>
+
+<div class="over fin buscar">c</div>
+<div class="calificacion fin">
+  <ion-card>
+  <ion-card-header>
+   Califique su servicio   
+  </ion-card-header>
+  <ion-list>
+  
+  <ion-range min="0" max="10" step="2" snaps="true" >
+     <ion-icon small range-left name="star-outline"></ion-icon>
+     <ion-icon range-right name="star"></ion-icon>
+  </ion-range>
+
+  </ion-list>
+  <ion-list>
+     
+     <button style="height:70px;margin:0px" ion-button full  color="danger">Finzalizar Servicio</button>
+
+  </ion-list>
+</ion-card>
+</div>
+
+<div class="radar buscar">
+  <div class="pointer"></div>
+  <div class="shadow"></div>
+</div> 
+
+<ion-fab id="cancelar" class="buscar" bottom  style="width: 100%;z-index: 9999;bottom: 0px;"  >
+      <button style="height:70px;margin:0px" ion-button full  color="danger">Cancelar</button>
+ </ion-fab>
+
+ 
+<ion-fab id="mantener_servicio" class="fin" bottom  style="width: 100%;z-index: 9999;bottom: 0px;"  >
+      <button style="height:70px;margin:0px" ion-button full  color="secondary">Mantener Servicio</button>
+ </ion-fab>
+
+ <ion-fab bottom  class="conductor" left id="cancelar_servicio">
+   <button ion-fab  color="danger" > <ion-icon name="close"></ion-icon></button>
+ </ion-fab>
+
+
+ <ion-fab bottom left class="inicio" id="carro">
+   <button ion-fab> <ion-icon name="car"></ion-icon></button>
+ </ion-fab>
+
+
+ <ion-fab  bottom center   id="locacion" >
+   <button ion-fab> <ion-icon name="locate"></ion-icon></button>
+ </ion-fab>
+
+  
+
+ <ion-fab  bottom right class="conductor" id="llamar">
+   <button ion-fab  > <ion-icon name="call"></ion-icon></button>
+ </ion-fab>
+
+
+ <ion-fab  id="menu" class="inicio"  bottom right >
+   <button ion-fab> <ion-icon name="menu"></ion-icon></button>
+ </ion-fab>
+
+   
+
+
+
+</ion-content>
